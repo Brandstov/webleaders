@@ -278,9 +278,8 @@ body {
     height: 500px;
 }
 
-.visual-container img {
-    transform: translate(-25%, -32%);
-    
+.image-wrapper img {
+    transform: translate(-32%, -32%);
 }
 
 .section-1 .content-container {
@@ -394,12 +393,13 @@ body {
     height: 360px;
     width: 100%;
     transform-style: inherit;
+    background-color: #D8ED58;
 }
 
-.section-4 img {
-    width: 100%;
+.section-4 #parallax {
     height: 100%;
-    object-fit: cover;
+    background-image: url("./images/w-banner.svg");
+    background-size: cover;
 }
 
 /* section 5 */
@@ -414,10 +414,11 @@ body {
 
 .section-5 h2 {
     padding: 120px 0 35px;
-    font-family: Halyard Display;
+    font-family: 'Halyard Display';
+    font-weight: 500;
     font-size: 50px;
     line-height: 67px;
-    color: white;
+    color: #9CC7F1;
 }
 
 .section-5 .client-reviews-container {
