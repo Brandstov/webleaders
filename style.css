@@ -43,7 +43,33 @@ body {
 }
 
 .list-items-container .list-item {
+    display: inline-block;
+    position: relative;
+    transition: all .3s ease-in-out;
     cursor: pointer;
+}
+
+.list-items-container .list-item::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -10px;
+    left: 50%;
+    border-radius: 100%;
+    background-color: white;
+    transform-origin: bottom;
+    transition: transform 0.25s ease-out;
+}
+
+.list-items-container .list-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+  }
+
+.list-items-container .list-item:hover {
+    color: #9CC7F1;
 }
 
 .list-item.beta {
@@ -352,9 +378,22 @@ body {
     align-items: flex-end;
 }
 
+.section-3 .image-container img {
+    width: 340px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.section-3 .image-container img:hover {
+    transform: scale(1.01) translateY(-5px);
+}
+
 /* section 4 */
 .section-4 {
+    position: relative;
     height: 360px;
+    width: 100%;
+    transform-style: inherit;
 }
 
 .section-4 img {
@@ -449,4 +488,43 @@ body {
 
 .show {
     opacity: 1;
+}
+
+.button {
+    // all the various shared styles reside here
+    // just take whichever ones you need for the button in question
+    background: $green;
+    border: 2px solid $grey;
+    color: white;
+    display: inline-block;
+    font-family: "Trebuchet MS", sans-serif;
+    overflow: hidden;
+    padding: 15px 45px 15px 40px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.4s ease;
+    z-index: 1;
+    &:before,
+    &:after {
+      background: $grey;
+      transition: 0.3s ease;
+      content: '';
+      position: absolute;
+      z-index: -1;
+    }
+}
+
+.bottom-right {
+    &:before {
+        top: 0;
+        bottom: 0;
+        right: -120%;
+        transform: skewX(-45deg);
+        width: 100%;
+    }
+    &:hover {
+        &:before {
+        width: 240%;
+        }
+    }
 }
