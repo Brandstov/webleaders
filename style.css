@@ -238,8 +238,26 @@ body {
     margin: auto;
 }
 
+.visual-container {
+    overflow: hidden;
+    height: 100%;
+    width: 562px;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    width: 562px;
+    height: 500px;
+}
+
+.visual-container img {
+    transform: translate(-25%, -32%);
+    
+}
+
 .section-1 .content-container {
-    margin-left: 112px;
     color: #0A1833;
 }
 
@@ -422,4 +440,13 @@ body {
     height: 60px;
     cursor: pointer;
     margin: 40px 0 0 auto;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 3s;
+}
+
+.show {
+    opacity: 1;
 }
