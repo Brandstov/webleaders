@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Ruda';
+    src: url('./fonts/Ruda-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Halyard Display';
+    src: url('./fonts/Halyard-Display.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ruda';
+}
+
+.header {
+    position: relative;
+    background-color: #0A1833;
+    height: 100vh;
+    width: 100%;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 60px 0;
+    color: #9CC7F1; 
+}
+
+h1 {
+    color: #D8ED58;
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 100px;
+    font-family: 'Halyard Display';
+    margin-bottom: 50px;
+}
+
+.title-container {
+    margin: 120px 310px;
+}
+
+.title-container p {
+    color: white;
+    font-family: Ruda;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.hexagon-grid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.webleaders-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
