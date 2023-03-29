@@ -89,6 +89,9 @@ body {
 }
 
 .menu-container .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     font-family: 'Ruda';
     border: 1px solid #9CC7F1;
@@ -97,12 +100,18 @@ body {
     width: 240px;
     height: 47px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 main {
     padding-top: 90px;
-    max-width: 1180px;
+    max-width: 900px;
     margin: auto;
+}
+
+.article-content-image {
+    width: 100%;
+    margin: 30px auto 30px;
 }
 
 .breadcrumb {
@@ -133,6 +142,13 @@ h1 {
     border-top: 3px solid red;
     border-bottom: 3px solid red;
     margin-bottom: 60px;
+}
+
+.author-container img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    object-fit: cover;
 }
 
 .author-container p:first-child {
@@ -188,14 +204,14 @@ h2 {
     width: 100px;
     fill: #9CC7F1;
     position: absolute;
-    left: -50px;
-    top: -50px;
+    left: 20px;
+    top: 20px;
 }
 
 .quote-container img {
     width: 100px;
     fill: #9CC7F1;
     position: absolute;
-    right: 50px;
-    bottom: 50px;
+    right: 20px;
+    bottom: 20px;
 }

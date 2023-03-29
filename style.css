@@ -93,6 +93,9 @@ body {
 }
 
 .menu-container .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     font-family: 'Ruda';
     border: 1px solid #9CC7F1;
@@ -101,6 +104,7 @@ body {
     width: 240px;
     height: 47px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .title-container {
