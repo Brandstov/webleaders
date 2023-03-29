@@ -1,0 +1,6 @@
+.hero-container {
+    background-color: red;
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
